@@ -11,7 +11,7 @@ pp = pprint.PrettyPrinter(indent=4)
 
 
 def index(request):
-    return HttpResponse("Hello, world")
+    return HttpResponse("Welcome to TFL Task by Swapnil Markhedkar. Refer to README.md for more info on API endpoints")
 
 
 class UserList(generics.ListCreateAPIView):
