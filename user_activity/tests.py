@@ -7,10 +7,11 @@ from rest_framework.test import APITestCase
 from user_activity.serializers import ActivityWithUserInfoSerializer
 from user_activity.models import User, Activity
 
-# Create your tests here.
-
 
 class UserActivity(APITestCase):
+    """
+    Simple test case to check if the main task REST API end point fetches a 200
+    """
     url = reverse('act_user')
 
     def test_activity_user(self):

@@ -15,7 +15,7 @@ class ActivitySerializer(serializers.ModelSerializer):
 
 
 class ActivityWithUserInfoSerializer(serializers.ModelSerializer):
-    user = UserSerializer(read_only=True)  # @TODO: Change later
+    user = UserSerializer(read_only=True)  # forbidden to modify from here
 
     class Meta:
         model = Activity

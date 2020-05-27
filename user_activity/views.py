@@ -11,8 +11,6 @@ pp = pprint.PrettyPrinter(indent=4)
 
 
 def index(request):
-    # print(User.objects.filter())
-    print(Activity.objects.filter(user_id=1).values())
     return HttpResponse("Hello, world")
 
 
@@ -35,12 +33,6 @@ class UserDetail(generics.RetrieveUpdateDestroyAPIView):
 
 
 class ActivityList(generics.ListCreateAPIView):
-    # @TODO: Remove
-    # def get(self, request, format=None):
-    #     activities = Activity.objects.filter(user_id=1)
-    #     serializer = ActivitySerializer(activities, many=True)
-    #     print(serializer.data)
-    #     return Response(serializer.data)
     """
     @desc - List and create activites
     @route - GET|POST api/acitivities/
