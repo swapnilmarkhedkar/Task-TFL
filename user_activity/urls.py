@@ -8,7 +8,7 @@ urlpatterns = [
     path('users/<int:pk>/', views.UserDetail.as_view()),
     path('activities/', views.ActivityList.as_view()),
     path('activities/<int:pk>/', views.ActivityDetail.as_view()),
-    path('act-user/', views.ActivityWithUserInfoList.as_view()),
+    path('act-user/', views.ActivityWithUserInfoList.as_view(), name='act_user'),
     path('act-user/<int:pk>/', views.ActivityWithUserInfoDetail.as_view()),
 ]
 
