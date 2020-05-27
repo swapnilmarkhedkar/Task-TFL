@@ -9,6 +9,12 @@ class UserSerializer(serializers.ModelSerializer):
 
 
 class ActivitySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Activity
+        fields = '__all__'
+
+
+class ActivityWithUserInfoSerializer(serializers.ModelSerializer):
     user = UserSerializer(read_only=True)  # @TODO: Change later
 
     class Meta:
