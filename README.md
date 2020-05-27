@@ -5,7 +5,8 @@
 REST API end point to get activity of users
 
 Custom management command  - `python3 manage.py populate_db` (Already populated for Live version)
-Credentails for admin panel is admin
+
+Credentials for admin panel username and password - admin
 ## REST API Endpoints
 
 ## **Activity Period with User Inforation (all)**
